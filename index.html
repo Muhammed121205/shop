@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <title>Көрпелер мен Жастықтар</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Қош келдіңіз!</h1>
+    <p>Барлық өнімдер WhatsApp арқылы тапсырыс беріледі.</p>
+    
+    <div class="products">
+        <div class="product">
+            <img src="images/korpe1.jpg" alt="Көкшіл ақ оюлы" onclick="zoomImage(this)">
+            <h2>Көкшіл ақ оюлы</h2>
+            <button onclick="orderProduct('Көкшіл ақ оюлы')">Тапсырыс беру</button>
+        </div>
+        <!-- Осы жерге басқа да өнімдерді дәл осылай қосасың -->
+         <div class="product">
+    <img src="images/korpe2.jpg" alt="Жасыл көрпе жинақтары" onclick="zoomImage(this)">
+    <h2></h2>
+    <button onclick="orderProduct('Жасыл көрпе жинақтары')">Тапсырыс беру</button>
+</div>
+         <div class="product">
+    <img src="images/korpe3.jpg" alt="" onclick="zoomImage(this)">
+    <h2>Аты</h2>
+    <button onclick="orderProduct('Аты')">Тапсырыс беру</button>
+</div>
+
+    </div>
+
+    <div id="overlay" onclick="closeZoom()">
+        <img id="zoomedImg" src="" alt="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
